@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navigation_items",
+  "info": {
+    "name": "NavigationItems"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "slug": {
+      "type": "string"
+    },
+    "tag": {
+      "model": "tag"
+    },
+    "children": {
+      "collection": "navigation-items"
+    }
+  }
+}

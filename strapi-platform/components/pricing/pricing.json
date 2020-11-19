@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_pricing_pricings",
+  "info": {
+    "name": "Pricing",
+    "icon": "wallet"
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "decimal",
+      "min": 0,
+      "required": true
+    },
+    "isDiscounted": {
+      "type": "boolean",
+      "default": false
+    },
+    "discountPercent": {
+      "type": "integer",
+      "max": 100,
+      "min": 0,
+      "default": 0
+    }
+  }
+}
